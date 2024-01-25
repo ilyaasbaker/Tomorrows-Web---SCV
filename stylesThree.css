@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
+* {
+
+padding: 0;
+margin: auto;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+overflow: hidden;
+
+
+}
+
+
+/* navigation */
+
+#navigation {
+    
+    text-align: center;
+    text-decoration-color: black;
+    text-decoration: none;
+    color: rgb(29, 149, 200);
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 15px;
+    padding: 10px;
+    display: inline-block;
+    border: solid 2px rgb(29, 149, 200);
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#navigation:hover {
+    
+    color: yellow;
+    font-size: 100%;
+}
+
+#navigation:link {
+    
+    color: black;
+}
+
+
+#navigation:active {
+    
+    color: yellow;
+}
+
+
+/* body */
+
+/* styled the video as the background of the website */
+
+#videoThreeCon {
+
+    min-width: 100%; 
+    min-height: 100%; 
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+
+}
+
+#videoThree {
+
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+
+}
+
+/* webcam */
+
+/* reducing the size of the webcam + placement */
+
+#webcam {
+
+    margin: 20px; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+
+}
+
+canvas {
+
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -700px;
+
+}
+
+
+/* tutorial text/div */
+
+#tutorial {
+
+    width: 75%;
+    height: auto;
+    max-width: 900px;
+    max-height: 500px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: aliceblue;
+    word-wrap: break-word;
+    margin-bottom: 700px;
+    overflow: scroll;
+
+}
+
+h1 {
+
+    text-align: center;
+
+}
+
+p {
+
+    text-align: justify;
+
+}
+
+li {
+
+    list-style: upper-roman;
+    text-align: justify;
+}
+
+/* footer */
+
+footer {
+
+    position: fixed;
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 100%;
+    font: inherit;
+    text-align: center;
+}

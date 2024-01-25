@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    
+  <title>SCV</title>
+
+  <link rel="stylesheet" href="stylesThree.css">
+
+</head>
+
+<body>
+
+  <!-- header/ navigation moved to footer -->
+
+  <!-- <header class="nav">  
+    header &copy;
+    <a id="navigation" href="index.html"> [Pose Detection Model] </a>
+    <a id="navigation" href="indexTwo.html"> [Image Classification Model] </a>
+    <a id="navigation" href="indexThree.html"> [How it works] </a>
+    
+</header> -->  
+
+<!-- <div id="webcamContainer"> -->
+
+<div id="webcam"></div>
+
+<!-- </div> -->
+  
+       <!-- background video -->
+
+       <div id="videoThreeCon">
+
+        <video id="videoThree" muted loop>
+          <source src="UNTITLED.mp4" type="video/mp4">
+        </video>
+
+      </div>
+
+<!-- tutorial blurb -->
+
+<div id="tutorial">
+  
+  
+        <h1>HOW IT WORKS</h1>
+
+            <br>
+
+            <p>
+            Stance Controlled Video (SCV) = Hands Free.
+            That means no remote controls and no need to touch your screen or keyboard. <br>
+            Using Machine Learning to integrate Image Recognition with Video Controls allows for a Hands Free experience 
+            when it comes to watching something whilst multitasking. For example: You're baking whilst watching a recipe video,
+            your hands are too messy to pause the video so you have to wash them and dry them before you can simply press pause 
+            so you can keep your screen clean and dry, or maybe 
+            you try and do it with your nose. The SCV gets rid of all the hassle. <br> <br> 
+            <h2>Image Classification Model</h2> <br>
+            The Image Classification Model (ICM) has been trained to differentiate between whether or not you're
+            in the webcams field of view, it'll play if you are and when it no longer detects you it'll pause.
+            <br>
+            This page utilises the ICM method to play/pause the background video.
+            <br><br>
+            <h2>Pose Detection Model</h2> <br>
+            The Pose Detection Model (PDM) is trained to recognise different poses. It's much more advanced than the ICM
+            and therefore a little more complex. The PDM is so advanced it can differentiate between you standing up, sitting down or crouching.
+            Utilising it's advanced form of recognition would add a lot more hands free functionality, for example if it was trained to recognise 
+            someone standing with their arms out as lowering the volume or holding both hands above your head as raising the volume, it would add a lot
+            more freedom to multitask.
+            <br><br>
+
+            <h2>Instructions</h2> <br>
+            <li>If you want the video to play, you have to be in the webcams field of view.</li> <br> 
+            <li>If you want the video to pause, you need to leave the webcams field of view.</li> <br> 
+            <li>When the video plays, the background will turn green, if it's paused then it turns red.</li> <br>   
+            <br><br>
+            <h2 style="color: red;">DISCLAIMER</h2> <br>
+            <li>The Pose Detection Model isn't functioning</li> <br>
+            <li>The Image Classification Model won't recognise you if the lighting is poor; stay somewhere that's well lit</li> <br>
+            <li>This concept is quite fresh so it has quite a long way to go</li> <br>
+            </p>
+
+</div>
+
+
+
+
+<!-- footer + navigation  -->
+
+<footer>
+
+    <a id="navigation" href="index.html"> [Pose Detection Model] </a>
+    <a id="navigation" href="indexTwo.html"> [Image Classification Model] </a>
+    <a id="navigation" href="indexThree.html"> [How it works] </a>
+
+</footer>
+
+
+<!-- js file -->
+<script src="scriptThree.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+
+</body>
+</html>

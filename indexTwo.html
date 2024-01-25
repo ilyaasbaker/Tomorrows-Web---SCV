@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    
+  <title>SCV</title>
+
+  <link rel="stylesheet" href="stylesTwo.css">
+
+</head>
+<body>
+
+  <header class="nav">  
+
+    <a id="navigation" href="index.html"> [Pose Detection Model] </a>
+    <a id="navigation" href="indexTwo.html"> [Image Classification Model] </a>
+    <a id="navigation" href="indexThree.html"> [How it works] </a>
+    
+</header>
+
+
+   <div class="frameContainer">
+  <!-- OS X Yosemite Template from https://codepen.io/JohJakob/pen/YPxgwo -->
+  <div class="window">
+    <div class="titlebar">
+      <div class="buttons">
+        <div class="close">
+          <a class="closebutton" href="#"><span><strong>x</strong></span></a>
+          <!-- close button link -->
+        </div>
+        <div class="minimize">
+          <a class="minimizebutton" href="#"><span><strong>&ndash;</strong></span></a>
+          <!-- minimize button link -->
+        </div>
+        <div class="zoom">
+          <a class="zoombutton" href="#"><span><strong>+</strong></span></a>
+          <!-- zoom button link -->
+        </div>
+      </div>
+      <p id="windowTitle">DEFAULT VIDEO</p>
+      <!-- window title -->
+    </div>
+
+     <!-- video -->
+
+    <video id="videoTwo" controls autoplay loop muted>
+      <source src="video.mp4" type="video/mp4" class="videos">
+      Your browser does not support the video tag.
+    </video>
+
+  </div>
+  </div>
+
+
+<footer>footer &copy;</footer>
+
+
+<!-- js file -->
+<script src="scriptTwo.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+
+</body>
+</html>
